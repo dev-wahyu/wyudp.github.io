@@ -1,78 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="?" />
-    <meta name="keywords" content="?" />
-    <meta name="author" content="anonymous" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Material CSS -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
-  <body>
-
-    <div class="container">
-      <div class="image-container">
-        <img
-          src="img/foto.jpg"
-          alt="wahyudioputra_"
-          height="110"
-          width="110"
-        />
-      </div>
-      <h1 class="name">wahyu</h1>
-      <br />
-      
-      <footer class="footer">
+<html>
+<head>
+    <title>Wahyu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .blink {
+            animation: blink 1s infinite;
+        }
+        .minecraft-font {
+            font-family: 'Press Start 2P', cursive;
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-300 flex flex-col items-center justify-center min-h-screen">
+    <audio autoplay loop>
+        <source src="https://on.soundcloud.com/uWpkWrDXGNwBUpuz5.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="text-center">
+        <p class="text-lg mb-4 blink">&gt;_ no system is safe</p>
+        <h1 class="text-6xl font-bold mb-4 minecraft-font">
+            <span class="text-red-600">WAH</span><span class="text-gray-50">YU</span>
+        </h1>
+<footer class="footer">
         <span id="typing"></span>
       </footer>
     </div>
-
-    <!-- My JS -->
-    <script src="js/app.js"></script>
-
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-
-    <!-- Typeit Open -->
-    <!-- TypeitJS -->
+     
+        <!-- TypeitJS -->
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script>
       new TypeIt("#typing", {
         speed: 50,
         waitUntilVisible: true,
       }) 
-        .type("Hi peeps", { delay: 1000 })
+        .type("Hi peeps 🤓", { delay: 1000 })
         .delete(11)
-        .type("Introducing my name Wahyu", { delay: 500 })
+        .type("Introducing my name Wahyu 😎", { delay: 500 })
         .delete(25)
         .type("I was born in Indonesia, in 2004", { delay: 500 })
         .delete(32)
         .type("create by wahyu")
         .go();
     </script>
-  </body>
+    </div>
+</body>
 </html>
